@@ -32,3 +32,29 @@ This repository contains the analysis pipeline for the Human Gut Cell Atlas proj
 
    ```bash
    git clone https://github.com/yourusername/human-gut-cell-atlas-analysis.git
+   ```
+
+2. Change into the project directory:
+
+   ```bash
+   cd human-gut-cell-atlas-analysis
+   ```
+
+3. Install the required dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## Usage
+
+Provide detailed instructions on how to use the analysis pipeline. Include examples and usage scenarios, if applicable. 
+
+## Contributing
+
+If you would like to contribute to this project, please follow the guidelines in [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## License
+
+This project is licensed under the [License Name] - see the [LICENSE.md](LICENSE.md) file for details.
+```
