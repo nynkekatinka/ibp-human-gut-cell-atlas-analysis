@@ -61,7 +61,18 @@ conda install -c conda-forge nb_conda_kernels
 conda install -c conda-forge r-dplyr
 conda run -n r_kernel Rscript -e 'IRkernel::installspec(name="r_kernel", displayname="R 3.3")'
 ```
-Some of the R packages required need to be installed via github, in order to do this run the following code. Subsistute your own username/password where appropriate.
+### Alternatives to installing R packages via github
+Method 1. Use Bioconductor instead of github. The newest version (3.19) of Bioconductor asks for Rv4.4, which has not been released yet. Instead, Bioconductor 3.18 will work with Rv4.3.
+```R
+if (!require("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+# The following initializes usage of Bioc devel
+BiocManager::install(version=3.18)
+
+BiocManager::install("STdeconvolve")
+```
+Method 2. Subsistute your own username/password where appropriate.
 ```R
 install.packages("usethis")
 
