@@ -61,6 +61,17 @@ conda install -c conda-forge nb_conda_kernels
 conda install -c conda-forge r-dplyr
 conda run -n r_kernel Rscript -e 'IRkernel::installspec(name="r_kernel", displayname="R 3.3")'
 ```
+Alternative more concise code to set up the same kernel.
+```bash
+# Create a Conda environment with R 4.3.2
+conda create -n r_kernel r-base=4.3.2 r-irkernel jupyter nb_conda_kernels r-dplyr
+
+# Activate the environment
+conda activate r_kernel
+
+# Install IRkernel in the R environment
+Rscript -e 'IRkernel::installspec(name="r_kernel", displayname="R 4.3.2")'
+```
 Some of the R packages required need to be installed via github, in order to do this run the following code. Subsistute your own username/password where appropriate.
 ```R
 install.packages("usethis")
