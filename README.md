@@ -61,6 +61,17 @@ conda install -c conda-forge nb_conda_kernels
 conda install -c conda-forge r-dplyr
 conda run -n r_kernel Rscript -e 'IRkernel::installspec(name="r_kernel", displayname="R 3.3")'
 ```
+Alternative more concise code to set up the same kernel.
+```bash
+# Create a Conda environment with R 4.3.2
+conda create -n r_kernel r-base=4.3.2 r-irkernel jupyter nb_conda_kernels r-dplyr
+
+# Activate the environment
+conda activate r_kernel
+
+# Install IRkernel in the R environment
+Rscript -e 'IRkernel::installspec(name="r_kernel", displayname="R 4.3.2")'
+```
 ### Alternatives to installing R packages via github
 Method 1. Use Bioconductor instead of github. The newest version (3.19) of Bioconductor asks for Rv4.4, which has not been released yet. Instead, Bioconductor 3.18 will work with Rv4.3.
 ```R
@@ -73,6 +84,7 @@ BiocManager::install(version=3.18)
 BiocManager::install("STdeconvolve")
 ```
 Method 2. Subsistute your own username/password where appropriate.
+
 ```R
 install.packages("usethis")
 
