@@ -1,9 +1,12 @@
-/output_18/*
+astro_markers.csv
+data_exploration.ipynb
+read_images.ipynb
 astro_markers.csv
 data_exploration.ipynb
 read_images.ipynb
 results/
 data/
+output_18/
 VisiumFFPE_Mouse_Brain_Transgenic_Age_17p9_Rep_1.h5
 spatial_cord_subset_17p9_rep1.csv
 optlDA.17p9_rep1_astrogenes.rds
