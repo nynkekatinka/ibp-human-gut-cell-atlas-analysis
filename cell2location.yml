@@ -11,4 +11,7 @@ dependencies:
   - pip:
     - cell2location
     - leidenalg
+    - matplotlib
+    - scanpy
+    - numpy
     
