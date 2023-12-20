@@ -1,7 +1,6 @@
 astro_markers.csv
 data_exploration.ipynb
 read_images.ipynb
-astro_markers.csv
 data_exploration.ipynb
 read_images.ipynb
 results/
@@ -10,3 +9,10 @@ output_18/
 VisiumFFPE_Mouse_Brain_Transgenic_Age_17p9_Rep_1.h5
 spatial_cord_subset_17p9_rep1.csv
 optlDA.17p9_rep1_astrogenes.rds
+figures/show1345_12_condensed4.png
+.ipynb_checkpoints/cell2location_scRNA_batch-checkpoint.ipynb
+figures/showclassical.png
+figures/showinflame.png
+figures/showneurons.png
+figures/showglia.png
+.ipynb_checkpoints/cell2locationTutorial-checkpoint.ipynb
